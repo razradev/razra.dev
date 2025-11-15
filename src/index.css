@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Geist";
+    src: url(assets/fonts/Geist-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Iosevka";
+    src: url(assets/fonts/IosevkaFixedSS10-Medium.woff2);
+}
+
+@theme {
+    --font-sans: "Geist", "Helvetica Nueue", Arial, Helvetica, sans-serif;
+    --font-mono:
+        "Iosevka", "Geist", "Helvetica Nueue", Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    body {
+        background-color: color-mix(in srgb, var(--color-blue-950), black 50%);
+        @apply text-slate-300;
+    }
+
+    h1 {
+        @apply font-mono text-lg/[2] text-slate-50 uppercase;
+    }
+
+    h2 {
+        @apply font-mono text-base/[1.15] text-slate-200 uppercase;
+    }
+
+    h3 {
+        @apply text-sm/[1.25] text-slate-400;
+    }
+
+    i {
+        font-size: inherit;
+    }
+
+    details {
+        @media (prefers-reduced-motion: no-preference) {
+            interpolate-size: allow-keywords;
+        }
+
+        &::details-content {
+            opacity: 0;
+            block-size: 0;
+            overflow-y: clip;
+            transition:
+                content-visibility 0.5s allow-discrete,
+                opacity 0.5s,
+                block-size 0.5s;
+        }
+
+        &[open]::details-content {
+            opacity: 1;
+            block-size: auto;
+        }
+    }
+}
