@@ -1,19 +1,19 @@
 /*
   Access-Control-Allow-Origin: *
 
-/games/**/Build/*.br
-    Content-Encoding: br
+/games/*/Build/*.br
+  Content-Encoding: br
 
-/games/**/Build/*.data
-    Content-Type: application/octet-stream
+/games/*/Build/*.data
+  Content-Type: application/octet-stream
 
-/games/**/Build/*.wasm
-    Content-Type: application/wasm
-    Cross-Origin-Opener-Policy: same-origin
-    Cross-Origin-Embedder-Policy: require-corp
+/games/*/Build/*.wasm
+  Content-Type: application/wasm
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
 
-/games/**/Build/*.js
-    Content-Type: application/javascript
+/games/*/Build/*.js
+  Content-Type: application/javascript
 
-/games/**/Build/*.json
-    Content-Type: application/json
+/games/*/Build/*.json
+  Content-Type: application/json
