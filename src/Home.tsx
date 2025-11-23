@@ -1,3 +1,4 @@
+import { Title } from "@solidjs/meta";
 import MatthewIves from "./assets/logo/MatthewIves";
 import AwardSection from "./components/AwardSection";
 import Icon from "./components/Icon";
@@ -7,6 +8,7 @@ import NavLink from "./components/NavLink";
 export default function Home() {
   return (
     <>
+      <Title>Matthew Ives</Title>
       <div class="flex max-md:flex-col gap-x-24 gap-y-2 justify-evenly">
         <header class="flex flex-col w-64 lg:w-md relative z-10">
           <div class="sticky top-16">

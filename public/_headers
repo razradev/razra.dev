@@ -1,17 +1,17 @@
-/games/snetro/Build/*.framework.js.br
+/gamefiles/snetro/Build/*.framework.js.br
   Content-Type: application/javascript
   Content-Encoding: br
 
-/games/snetro/Build/*.wasm.br
+/gamefiles/snetro/Build/*.wasm.br
   Content-Type: application/wasm
   Content-Encoding: br
 
-/games/snetro/Build/*.data.br
+/gamefiles/snetro/Build/*.data.br
   Content-Type: application/octet-stream
   Content-Encoding: br
 
-/games/snetro/Build/*.loader.js
+/gamefiles/snetro/Build/*.loader.js
   Content-Type: application/javascript
 
-/games/snetro/Build/*
+/gamefiles/snetro/Build/*
   Cache-Control: no-store

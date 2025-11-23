@@ -1,11 +1,12 @@
+import { Title } from "@solidjs/meta";
 import { onMount } from "solid-js";
 
 export default function Snetro() {
   let canvasRef!: HTMLCanvasElement;
-  const gameLocation: string = "/games/snetro/";
+  const gameLocation: string = "/gamefiles/snetro/";
 
   onMount(async () => {
-    await loadScript("/games/snetro/Build/Builds.loader.js");
+    await loadScript("/gamefiles/snetro/Build/Builds.loader.js");
     const unityConfig = {
       dataUrl: `${gameLocation}Build/Builds.data.br`,
       frameworkUrl: `${gameLocation}Build/Builds.framework.js.br`,
@@ -31,8 +32,11 @@ export default function Snetro() {
   }
 
   return (
-    <div class="w-full aspect-[3/2]">
-      <canvas id="unity-canvas" ref={canvasRef} class="w-full h-full" />
-    </div>
+    <>
+      <Title>Snetro</Title>
+      <div class="w-full aspect-[3/2]">
+        <canvas id="unity-canvas" ref={canvasRef} class="w-full h-full" />
+      </div>
+    </>
   );
 }
